@@ -1,19 +1,162 @@
+/* ==========================
+   BOX OF GAMES - v0.2
+========================== */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#090B16;
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
 
-font-family:Arial, Helvetica, sans-serif;
+/* ==========================
+   HEADER
+========================== */
 
-background:#090B16;
+header{
 
-color:white;
+    position:fixed;
+    top:0;
+    left:0;
 
-min-height:100vh;
+    width:100%;
 
-overflow-x:hidden;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 50px;
+
+    background:rgba(10,10,25,.75);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:1px;
+
+}
+
+nav{
+
+    display:flex;
+    gap:25px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+    transition:.25s;
+
+}
+
+nav a:hover{
+
+    color:#5ec8ff;
+
+}
+
+header input{
+
+    width:230px;
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#1D2440;
+
+    color:white;
+
+    outline:none;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    color:#bfc8dd;
+
+    font-size:22px;
+
+    line-height:1.6;
+
+    margin-bottom:40px;
+
+}
+
+.hero button{
+
+    padding:18px 45px;
+
+    font-size:20px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:linear-gradient(90deg,#4f7cff,#8b5cf6);
+
+    transition:.3s;
+
+}
+
+.hero button:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 25px rgba(102,126,255,.7);
 
 }
