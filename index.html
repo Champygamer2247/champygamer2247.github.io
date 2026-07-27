@@ -6,48 +6,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BOX OF GAMES</title>
+    <title>Box Of Games</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
+    <!-- Fondo -->
+    <div id="stars"></div>
 
-    <div class="logo">
+    <!-- HEADER -->
 
-        <img src="img/logo.png" alt="BOX OF GAMES">
+    <header>
 
-    </div>
+        <div class="logo">
 
-    <nav>
+            <img src="img/logo-header.png" alt="Box Of Games">
 
-        <a href="#">Inicio</a>
-        <a href="#">Juegos</a>
-        <a href="#">Populares</a>
-        <a href="#">Categorías</a>
+        </div>
 
-    </nav>
+        <nav>
 
-    <input type="text" placeholder="🔍 Buscar juegos...">
+            <a href="#">Inicio</a>
 
-</header>
+            <a href="#featured">Destacados</a>
 
-<section class="hero">
+            <a href="#categories">Categorías</a>
 
-    <h1>Bienvenido a BOX OF GAMES</h1>
+            <a href="#latest">Nuevos</a>
 
-    <p>
-        Descubre cientos de juegos gratuitos y disfruta desde tu navegador.
-    </p>
+        </nav>
 
-    <button>Explorar Juegos</button>
+        <div class="search">
 
-</section>
+            <input type="text" placeholder="Buscar juegos...">
 
-<script src="js/script.js"></script>
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <span class="tag">
+
+            🎮 Plataforma gratuita de juegos
+
+        </span>
+
+        <h1>
+
+            Bienvenido a <br>
+
+            <span>Box Of Games</span>
+
+        </h1>
+
+        <p>
+
+            Descubre cientos de juegos gratuitos.
+            Juega directamente desde tu navegador,
+            sin instalaciones y totalmente gratis.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="play-btn">
+
+                🎮 Explorar Juegos
+
+            </button>
+
+            <button class="more-btn">
+
+                Saber más
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- DESTACADOS -->
+
+    <section id="featured" class="section">
+
+        <h2>🔥 Destacados</h2>
+
+        <div class="games">
+
+            <div class="game-card">
+
+                <h3>Próximamente</h3>
+
+            </div>
+
+            <div class="game-card">
+
+                <h3>Próximamente</h3>
+
+            </div>
+
+            <div class="game-card">
+
+                <h3>Próximamente</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CATEGORIAS -->
+
+    <section id="categories" class="section">
+
+        <h2>📂 Categorías</h2>
+
+        <div class="categories">
+
+            <div class="category">🏎️ Carreras</div>
+
+            <div class="category">⚽ Deportes</div>
+
+            <div class="category">🧟 Terror</div>
+
+            <div class="category">🧩 Puzzles</div>
+
+            <div class="category">🎯 Acción</div>
+
+            <div class="category">🏰 Aventura</div>
+
+            <div class="category">👥 Multijugador</div>
+
+            <div class="category">🎲 Casual</div>
+
+        </div>
+
+    </section>
+
+    <!-- ULTIMOS -->
+
+    <section id="latest" class="section">
+
+        <h2>⭐ Últimos juegos</h2>
+
+        <div class="games">
+
+            <div class="game-card"></div>
+
+            <div class="game-card"></div>
+
+            <div class="game-card"></div>
+
+            <div class="game-card"></div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Box Of Games
+
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
